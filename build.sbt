@@ -25,8 +25,8 @@ lazy val akkaPersistenceMongo = (
   Project("akka-persistence-mongo", file("."))
   settings(baseSettings: _*)
   settings(
-    publish := { },
-    publishLocal := { }
+    publish := { }//,
+    //publishLocal := { }
   )
   aggregate(akkaPersistenceMongoCommon, akkaPersistenceMongoCasbah)
 )
